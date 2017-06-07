@@ -36,7 +36,7 @@ server.route([ routes.css, routes.js, routes.assets, routes.templates, routes.sp
 server.start( onServerStarted );
 
 function onServerStarted() {
-    console.log( 'Server running on port ', port );
+    console.log( 'Server running on port ', port 3000);
 }
 
 function createDirectoryRoute( directory ) {
