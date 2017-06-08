@@ -1,5 +1,3 @@
-/*checkpoint 28*/
-/*fixed player position to bottom of window with 200px height*/ /*must add style to *album.css* to accomodate fixed element => padding-bottom: 200px [adds padding to album, allows users to view all page content even with active scroll and the player visible]*/
 .player-bar {
     position: fixed;
     bottom: 0;
@@ -50,13 +48,11 @@
     margin-right: 16.5%;
 }
 
-/* adjusted/increased font size, enlarging icons for visual/clarity*/
 .player-bar .main-controls .play-pause {
     margin-right: 15%;
     font-size: 1.6rem;
 }
 
-/*checkpoint 28*/
 /*want .currently-playing (middle) as widest control group, thus largest width property*/
 .player-bar .currently-playing {
     width: 50%;
@@ -185,7 +181,7 @@
       background-color: rgba(0, 0, 0, 0.6);
     }
 
-    /*player bar will collapse on itself if screen is too small; to prevent, change each control-group element to *display: block* in order to stack vertically*/
+    /*player bar will collapse on itself if screen is too small (to prevent, change each control-group element to *display: block* in order to stack vertically)*/
     /*with width set to 100%, elements can expand to full width of screen; minimum height included to ensure adequate space for display*/
     .player-bar .main-controls,
     .player-bar .currently-playing,
