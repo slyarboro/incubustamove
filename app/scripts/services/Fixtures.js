@@ -52,6 +52,14 @@
        return albumPicasso;
      };
 
+     Fixtures.getCollection = function(numberOfALbums) {
+       this.albums = [];
+       for (var i = 0; i < 12; i++) {
+         this.albums.push(angular.copy(albumPicasso));
+       }
+       return this.albums;
+     };
+
     //  (dup) factory returns var {object}, making object properties/methods available to other parts of application
      return Fixtures;
    }
