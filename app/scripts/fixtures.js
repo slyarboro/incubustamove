@@ -20,11 +20,11 @@ var albumPicasso = {
     year: '1881',
     albumArtUrl: 'assets/images/album_covers/04.png',
     songs: [
-      {name: 'Blue     | Bass Walker', length: '161.71', audioUrl: 'assets/music/blue'},
-      {name: 'Green    | Coriolan Overture Op.62', length: '103.96', audioUrl: 'assets/music/green'},
-      {name: 'Red      | George St. Shuffle', length: '268.45', audioUrl: 'assets/music/red'},
-      {name: 'Pink     | In the Hall of the Mountain King (Peer Gynt)', length: '153.14', audioUrl: 'assets/music/pink'},
-      {name: 'Magenta  | String Impromptu No.1', length: '374.22', audioUrl: 'assets/music/magenta'}
+      {name: 'Blue     (Bass Walker)', length: '161.71', audioUrl: 'assets/music/blue'},
+      {name: 'Green    (Coriolan Overture Op.62)', length: '103.96', audioUrl: 'assets/music/green'},
+      {name: 'Red      (George St. Shuffle)', length: '268.45', audioUrl: 'assets/music/red'},
+      {name: 'Pink     (In the Hall of the Mountain King (Peer Gynt))', length: '153.14', audioUrl: 'assets/music/pink'},
+      {name: 'Magenta  (String Impromptu No.1)', length: '374.22', audioUrl: 'assets/music/magenta'}
     ]
 };
 
