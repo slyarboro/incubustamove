@@ -1,9 +1,10 @@
+// Fixtures injected so service available for use within controller
 (function() {
-  function AlbumCtrl() {
-    this.albumData = angular.copy(albumPicasso);
+  function AlbumCtrl(Fixtures) {
+    this.albumData = Fixtures.getAlbum();
   }
 
   angular
     .module('miggidamac')
-    .controller('AlbumCtrl', AlbumCtrl);
+    .controller('AlbumCtrl', ['Fixtures', AlbumCtrl]);
 })();
