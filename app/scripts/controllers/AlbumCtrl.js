@@ -1,10 +1,11 @@
-// Fixtures injected so service available for use within controller
+// SongPlayer injected into controller; song play available within Album view
 (function() {
-  function AlbumCtrl(Fixtures) {
+  function AlbumCtrl(Fixtures, SongPlayer) {
     this.albumData = Fixtures.getAlbum();
+    this.songPlayer = SongPlayer;
   }
 
   angular
     .module('miggidamac')
-    .controller('AlbumCtrl', ['Fixtures', AlbumCtrl]);
+    .controller('AlbumCtrl', ['Fixtures', 'SongPlayer', AlbumCtrl]);
 })();
