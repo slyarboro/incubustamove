@@ -2,6 +2,10 @@
   function SongPlayer() {
       var SongPlayer = {};
 
+      /*
+      * @desc No song play upon page load
+      * @type {Object}
+      */
       var currentSong = null;
 
       /*
@@ -29,19 +33,49 @@
           currentSong = song;
       };
 
+      /*
+      * @function playSong
+      * @desc Plays selected song; icons reflect song play as true
+      * @param {Object} song
+      */
+      var playSong = function(song) {
+        currentBuzzObject.play();
+        song.playing = true;
+      };
+
+      /*
+      * @function pauseSong
+      * @desc Pauses song; respective album view icons reflect paused state (song play as false)
+      * @param {Object} song
+      */
+      var pauseSong = function(song) {
+        currentBuzzObject.pause();
+        song.playing = false;
+      }
+
+
+      /*
+      * SongPlayer.play (play method)
+      * @desc Plays selected song from beginning (or) resumes current song if in paused state
+      * @param {Object} song
+      */
       SongPlayer.play = function(song) {
           if (currentSong !== song) {
               setSong(song);
-              currentBuzzObject.play();
-              song.playing = true;
+              playSong(song);
 
           } else if (currentSong === song) {
               if (currentBuzzObject.isPaused()) {
-                currentBuzzObject.play();
+                playSong(song);
               }
           }
       };
 
+      /*
+      * SongPlayer.pause (pause method)
+      * @desc Pauses song play
+      * @param {Object} song
+      */
       SongPlayer.pause = function(song) {
           currentBuzzObject.pause();
           song.playing = false;
