@@ -2,7 +2,3 @@
     <div class="fill" ng-style="fillStyle()"></div>
     <div class="thumb" ng-mousedown="trackThumb()" ng-style="thumbStyle()"></div>
 </div>
-
-<!-- Angular's $apply function is not particularly intuitive. Read through this blog post on the subject, making sure to look at the code snippets and their results. Then remove $apply from the trackThumb method (keep the scope.value = percent * scope.max; part). Explain, in your own words, what happens when you remove $apply. Send your explanation to your mentor.
-
-$apply() is used to execute an expression in AngularJS from outside of the AngularJS framework -->
