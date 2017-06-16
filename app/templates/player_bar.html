@@ -23,14 +23,20 @@
       <h2 class="artist-song-mobile">{{ playerBar.albumData.artist }} - {{ playerBar.songPlayer.currentSong.name }}</h2>
       <h3 class="artist-name">{{ playerBar.albumData.artist }}</h3>
       <div class="seek-control">
-        <seek-bar></seek-bar>
+        <div class="seek-bar">
+          <div class="fill"></div>
+          <div class="thumb"></div>
+        </div>
         <div class="current-time"></div>
         <div class="total-time"></div>
       </div>
     </div>
     <div class="control-group volume">
       <span class="icon ion-volume-high"></span>
-      <seek-bar></seek-bar>
+      <div class="seek-bar">
+        <div class="fill"></div>
+        <div class="thumb"></div>
+      </div>
     </div>
   </div>
 </section>
